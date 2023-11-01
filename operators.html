@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+</head>
+<body>
+    <ul>
+        <li>addition:</li>
+        <li>substraction:</li>
+        <li>division:</li>
+        <li>multiplication:</li>
+        <li>modulos:</li>
+        <li>exponential:</li>
+        <li>exponential:</li>
+        <li>absolute value:</li>
+        <li>square root:</li>
+        <li>cube root:</li>
+        <li>random:</li>
+    </ul>
+
+    <script>
+        let num1 = 15
+        let num2 = 10
+        let num3 = 3
+
+        const lists = document.querySelectorAll('li')
+        const ul = document.querySelector('ul')
+
+        lists[0].textContext += num1 +num2
+        lists[1].textContent += num1 - num2 + num3
+        lists[2].textContent += num1 / num3
+        lists[3].textContent += num2 * num3
+        lists[4].textContent += num2 % num3
+        lists[5].textContent += num2 ** 3
+        lists[6].textContent += Math.pow(num3, 2)
+        lists[7].textContent += Math.abs(num2 - num1)
+        lists[8].textContent += Math.sqrt(64)
+        lists[9].textContent += Math.cbrt(27)
+        lists[10].textContent += Math.random()*255
+
+        ul.style.background = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`
+
+
+    </script>
+    
+</body>
+</html>
